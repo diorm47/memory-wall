@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="title" content="Стена памяти" />
+    <title>Стена памяти</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      href="css/page_dbfa908852e99cbe92c406ae94a8720c_v1.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="css/template_d30ebb7cc8a63ead2b6ced524c36282f_v1.css"
+      type="text/css"
+      data-template-style="true"
+      rel="stylesheet"
+    />
+    <script src="js/core.js"></script>
+  </head>
+  <body>
+    <div class="memory">
+      <header class="main-header">
+        <div class="container">
+          <div class="main-header__container h-100">
+            <div class="row d-flex align-items-center h-100 bar-header">
+              <a href="/" class="link-logo">
+                <div
+                  class="logo d-flex justify-content-between align-items-center"
+                >
+                  <img src="images/logo.jpg" alt="" />
+          
+                </div>
+              </a>
+
+              <div
+                class="menu-pads position-relative d-flex align-items-center"
+              >
+                <div class="mmmenu">
+                  <aside class="d-inline-block position-relative menu-item">
+                    <a href="#" class="href-menu">О нас</a>
+
+                    <div class="menu-drop">
+                      <a href="#" class="menu-drop__item">Направления работы</a>
+
+                      <a href="#" class="menu-drop__item"
+                        >История поискового продвижения</a
+                      >
+
+                      <a href="#" class="menu-drop__item">Поисковые отряды</a>
+
+                      <a href="#" class="menu-drop__item">Новости</a>
+
+                      <a href="#" class="menu-drop__item">Контакты</a>
+                    </div>
+                  </aside>
+
+                  <a href="#" class="href-menu selected">Стена памяти</a>
+
+                  <aside class="d-inline-block position-relative menu-item">
+                    <a href="#" class="href-menu">узнать судьбу солдата</a>
+
+                    <div class="menu-drop">
+                      <a href="#" class="menu-drop__item"
+                        >Алгоритм поиска информации</a
+                      >
+
+                      <a href="#" class="menu-drop__item"
+                        >Оставить заявку на уточнение судьбы</a
+                      >
+
+                      <a href="#" class="menu-drop__item">Ресурсы для поиска</a>
+                    </div>
+                  </aside>
+
+                  <a href="#" class="href-menu">материалы</a>
+                </div>
+
+                <div id="title-search">
+                  <form action="/search/index.php" class="search">
+                    <input
+                      id="title-search-input"
+                      class="search-input"
+                      placeholder="Поиск по сайту..."
+                      type="text"
+                      name="q"
+                      value=""
+                      size="40"
+                      maxlength="50"
+                      autocomplete="off"
+                    />
+
+                    <svg
+                      width="24"
+                      height="24"
+                      id="search-svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.6667 14.6667H15.6133L15.24 14.3067C16.5467 12.7867 17.3333 10.8133 17.3333 8.66667C17.3333 3.88 13.4533 0 8.66667 0C3.88 0 0 3.88 0 8.66667C0 13.4533 3.88 17.3333 8.66667 17.3333C10.8133 17.3333 12.7867 16.5467 14.3067 15.24L14.6667 15.6133V16.6667L21.3333 23.32L23.32 21.3333L16.6667 14.6667ZM8.66667 14.6667C5.34667 14.6667 2.66667 11.9867 2.66667 8.66667C2.66667 5.34667 5.34667 2.66667 8.66667 2.66667C11.9867 2.66667 14.6667 5.34667 14.6667 8.66667C14.6667 11.9867 11.9867 14.6667 8.66667 14.6667Z"
+                        fill="#4B4343"
+                      ></path>
+                    </svg>
+                  </form>
+                </div>
+                <script>
+                  $("#search-svg").on("click", function () {
+                    setTimeout(function () {
+                      if ($("input#title-search-input").hasClass("active")) {
+                        $(".mmmenu").css("visibility", "hidden");
+                      } else {
+                        $(".mmmenu").css("visibility", "visible");
+                      }
+                      $("input#title-search-input").focus();
+                    }, 200);
+                  });
+                  BX.ready(function () {
+                    new JCTitleSearch({
+                      AJAX_PAGE: "/photoarchive/",
+                      CONTAINER_ID: "title-search",
+                      INPUT_ID: "title-search-input",
+                      MIN_QUERY_LEN: 2,
+                    });
+                  });
+                </script>
+
+                <button class="navigation__toggle" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <ul id="mobile_menu">
+            <li class="menu_item menu_item_parent">
+              <p class="menu_item_link">
+                О нас
+                <span class="menu_item_arrow"></span>
+              </p>
+
+              <ul class="submenu">
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link">Направления работы</a>
+                </li>
+
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link"
+                    >История поискового продвижения</a
+                  >
+                </li>
+
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link">Поисковые отряды</a>
+                </li>
+
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link">Новости</a>
+                </li>
+
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link">Контакты</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu_item">
+              <a href="3" class="menu_item_link">Стена памяти</a>
+            </li>
+
+            <li class="menu_item menu_item_parent">
+              <p class="menu_item_link">
+                узнать судьбу солдата
+                <span class="menu_item_arrow"></span>
+              </p>
+
+              <ul class="submenu">
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link"
+                    >Алгоритм поиска информации</a
+                  >
+                </li>
+
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link"
+                    >Оставить заявку на уточнение судьбы</a
+                  >
+                </li>
+
+                <li class="menu_item">
+                  <a href="#" class="menu_item_link">Ресурсы для поиска</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu_item">
+              <a href="#" class="menu_item_link">материалы</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="container">
+        <div
+          class="bx-breadcrumb"
+          itemprop="http://schema.org/breadcrumb"
+          itemscope=""
+          itemtype="http://schema.org/BreadcrumbList"
+        >
+          <div
+            class="bx-breadcrumb-item"
+            id="bx_breadcrumb_0"
+            itemprop="itemListElement"
+            itemscope=""
+            itemtype="http://schema.org/ListItem"
+          >
+            <span itemprop="name">Старобжегокайское сельское поселение</span>
+            <meta itemprop="position" content="1" />
+          </div>
+
+          <div style="clear: both"></div>
+        </div>
+        <div class="container main-page position-relative">
+          <div class="main-img">
+            <picture>
+              <source
+                srcset="images/fon-photo.png"
+                media="(max-width: 500px)"
+              />
+              <source srcset="images/fon-photo.png" />
+              <img
+                src="images/fon-photo.png"
+                class="main-img__photo"
+                alt="Image description"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="images/small-smoke2.png"
+                media="(max-width: 500px)"
+              />
+              <source srcset="images/smoke2.png" />
+              <img
+                src="images/smoke2.png"
+                class="main-img__smoke"
+                alt="Image description"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="images/small-fire.png"
+                media="(max-width: 500px)"
+              />
+              <source srcset="images/fire.png" />
+              <img
+                src="images/fire.png"
+                class="main-img__smoke"
+                alt="Image description"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="images/small-smoke.png"
+                media="(max-width: 500px)"
+              />
+              <source srcset="images/smoke.png" />
+              <img
+                src="images/smoke.png"
+                class="main-img__smoke"
+                alt="Image description"
+              />
+            </picture>
+          </div>
+          <div class="main-page__wrapper">
+            <p class="main-description-first test1"></p>
+            <p class="main-text">СТЕНА ПАМЯТИ</p>
+            <p class="main-description">
+              Электронный архив фотографий и биографий<br />
+              участников Великой Отечественной войны и тружеников тыла.<br />
+              Вы можете добавить информацию о вашем родственнике в архив
+            </p>
+            <a href="/add-person/" class="add-people">Добавить ветерана</a>
+          </div>
+        </div>
+        <p class="memory-search__title">Поиск человека</p>
+        <script>
+          $("body").on("input", "#input-words", function () {
+            this.value = this.value.replace(/[^a-zа-яё\s]/gi, "");
+          });
+        </script>
+        <form method="GET" action="">
+          <div class="main-search">
+            <div class="main-search__wrapper">
+              <input
+                id="input-words"
+                type="text"
+                name="find_fname"
+                class="main-search__input"
+                placeholder="Фамилия"
+              />
+              <input
+                id="input-words"
+                type="text"
+                name="find_name"
+                class="main-search__input"
+                placeholder="Имя"
+              />
+              <input
+                id="input-words"
+                type="text"
+                name="find_mname"
+                class="main-search__input"
+                placeholder="Отчество"
+              />
+              <input
+                type="number"
+                name="find_birth_year"
+                class="main-search__input"
+                placeholder="Год рождения"
+              />
+              <button class="main-search__button main-search__button--on-bz">
+                Найти ветерана
+              </button>
+            </div>
+            <div style="width: 100%" class="main-search-option-3">
+              <input
+                id="input-words"
+                type="text"
+                name="find_placebirth"
+                class="main-search__input"
+                placeholder="Место рождения"
+              />
+              <div class="main-search-option3__wrapper">
+                <div class="main-search-option3__sub-wrapper1">
+                  <input
+                    id="input-words"
+                    type="text"
+                    name="find_placecall"
+                    class="main-search__input"
+                    placeholder="Место призыва"
+                  />
+                </div>
+                <div class="main-search-option3__sub-wrapper2">
+                  <input
+                    id="input-words"
+                    type="text"
+                    name="find_rank"
+                    class="main-search__input"
+                    placeholder="Звание, должность"
+                  />
+                  <input
+                    type="date"
+                    name="find_datecall"
+                    class="main-search__input"
+                    placeholder="Дата призыва"
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="main-search__button">Найти ветерана</button>
+          </div>
+          <div class="main-search-option">
+            <div class="i-select-search-form"></div>
+            <a href="#" class="main-search-option__more"
+              >а. Старобжегокай, п. Новая Адыгея, х. Хомуты</a
+            >
+          </div>
+        </form>
+        <script src="js/jquery.min.js"></script>
+
+        <div class="alf d-flex justify-content-between">
+          <div class="alf__wrapper">
+            <div class="alf__wrapper--half">
+              <a href="#" class="alf-item">А</a
+              ><a href="#" class="alf-item">Б</a
+              ><a href="#" class="alf-item">В</a
+              ><a href="#" class="alf-item">Г</a
+              ><a href="#" class="alf-item">Д</a
+              ><a href="#" class="alf-item">Е</a
+              ><a href="#" class="alf-item">Ж</a
+              ><a href="#" class="alf-item">З</a
+              ><a href="#" class="alf-item">И</a
+              ><a href="#" class="alf-item">Й</a
+              ><a href="#" class="alf-item">К</a
+              ><a href="#" class="alf-item">Л</a
+              ><a href="#" class="alf-item">М</a
+              ><a href="#" class="alf-item">Н</a
+              ><a href="#" class="alf-item">О</a>
+            </div>
+            <div class="alf__wrapper--half">
+              <a href="#" class="alf-item">П</a
+              ><a href="#" class="alf-item">Р</a
+              ><a href="#" class="alf-item">С</a
+              ><a href="#" class="alf-item">Т</a
+              ><a href="#" class="alf-item">У</a
+              ><a href="#" class="alf-item">Ф</a
+              ><a href="#" class="alf-item">Х</a
+              ><a href="#" class="alf-item">Ц</a
+              ><a href="#" class="alf-item">Ч</a
+              ><a href="#" class="alf-item">Ш</a
+              ><a href="#" class="alf-item">Щ</a
+              ><a href="#" class="alf-item">Э</a
+              ><a href="#" class="alf-item">Ю</a
+              ><a href="#" class="alf-item">Я</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-list">
+          <div
+            class="d-flex justify-content-between flex-wrap gallary-container"
+          >
+            <a href="./card-page.html" class="mem-item-href">
+              <div class="mem-item">
+                <div class="mem-item__wrapper">
+                  <div
+                    class="mem-item__img"
+                    style="
+                      background: url(images/%D0%A1%D0%A2%D0%95%D0%9D%D0%90%20%D0%9F%D0%90%D0%9C%D0%AF%D0%A2%D0%98%201.png)
+                        no-repeat top center/cover;
+                      display: block;
+                    "
+                  ></div>
+
+                  <div class="mem-item__tex-wrapper">
+                    <p class="mem-item__fname">Армасовна</p>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Антонина </span>
+                    </div>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Петрова</span>
+                    </div>
+                    <div class="pt-2">
+                      <span class="mem-item__date">Даты неизвестны</span>
+                    </div>
+                    <!-- <div class="pt-2">
+                                                            </div> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="./card-page.html" class="mem-item-href">
+              <div class="mem-item">
+                <div class="mem-item__wrapper">
+                  <div
+                    class="mem-item__img"
+                    style="
+                      background: url(images/no-photo.jpg) no-repeat top
+                        center/cover;
+                      display: block;
+                    "
+                  ></div>
+
+                  <div class="mem-item__tex-wrapper">
+                    <p class="mem-item__fname">____________</p>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Фёдор </span>
+                    </div>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Иванович</span>
+                    </div>
+                    <div class="pt-2">
+                      <span class="mem-item__date">Даты неизвестны</span>
+                    </div>
+                    <!-- <div class="pt-2">
+                                                            </div> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="./card-page.html" class="mem-item-href">
+              <div class="mem-item">
+                <div class="mem-item__wrapper">
+                  <div
+                    class="mem-item__img"
+                    style="
+                      background: url(images/f8ddb30c08d9fbc3a152894c5f798b1ea8da9a01.jpg)
+                        no-repeat top center/cover;
+                      display: block;
+                    "
+                  ></div>
+
+                  <div class="mem-item__tex-wrapper">
+                    <p class="mem-item__fname">Абайдулин</p>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Альмухамет</span>
+                    </div>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Ишмухаметович</span>
+                    </div>
+                    <div class="pt-2">
+                      <span class="mem-item__date">Даты неизвестны</span>
+                    </div>
+                    <!-- <div class="pt-2">
+                                                            </div> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="./card-page.html" class="mem-item-href">
+              <div class="mem-item">
+                <div class="mem-item__wrapper">
+                  <div
+                    class="mem-item__img"
+                    style="
+                      background: url(images/589d187d641fd0fd92008d1f2f0743ee7bad947e.jpg)
+                        no-repeat top center/cover;
+                      display: block;
+                    "
+                  ></div>
+
+                  <div class="mem-item__tex-wrapper">
+                    <p class="mem-item__fname">Абайдулин</p>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Хамис</span>
+                    </div>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Калинович</span>
+                    </div>
+                    <div class="pt-2">
+                      <span class="mem-item__date">Даты неизвестны</span>
+                    </div>
+                    <!-- <div class="pt-2">
+                                                            </div> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="./card-page.html" class="mem-item-href">
+              <div class="mem-item">
+                <div class="mem-item__wrapper">
+                  <div
+                    class="mem-item__img"
+                    style="
+                      background: url(images/4876a6c5337f5094d22c3f7d55ae1c20f5d19eab.jpg)
+                        no-repeat top center/cover;
+                      display: block;
+                    "
+                  ></div>
+
+                  <div class="mem-item__tex-wrapper">
+                    <p class="mem-item__fname">Абайдуллин</p>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Аюп</span>
+                    </div>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Мавлютович</span>
+                    </div>
+                    <div class="pt-2">
+                      <span class="mem-item__date">Даты неизвестны</span>
+                    </div>
+                    <!-- <div class="pt-2">
+                                                            </div> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="./card-page.html" class="mem-item-href">
+              <div class="mem-item">
+                <div class="mem-item__wrapper">
+                  <div
+                    class="mem-item__img"
+                    style="
+                      background: url(images/b33833359a88d565af080603ab4d8e0fd48fb3be.jpg)
+                        no-repeat top center/cover;
+                      display: block;
+                    "
+                  ></div>
+
+                  <div class="mem-item__tex-wrapper">
+                    <p class="mem-item__fname">Абакумов</p>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Федор</span>
+                    </div>
+                    <div class="wrapper">
+                      <span class="mem-item__name">Александрович</span>
+                    </div>
+                    <div class="pt-2">
+                      <span class="mem-item__date">Даты неизвестны</span>
+                    </div>
+                    <!-- <div class="pt-2">
+                                                            </div> -->
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <br />
+          <div class="pagination">
+            <span class="paginationPrevNext">
+              <svg
+                width="24"
+                height="22"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 11.0082L0.293184 11.7156C0.105572 11.5282 0.000108719 11.2739 0 11.0087C-0.000108719 10.7434 0.105143 10.489 0.292603 10.3014L1 11.0082ZM0.292603 10.3014L10.2926 0.293185L11.7074 1.70682L1.7074 11.7151L0.292603 10.3014ZM1.70682 10.3008L11.7068 20.2926L10.2932 21.7074L0.293184 11.7156L1.70682 10.3008ZM0.999641 10.0082L23.9996 10L24.0004 12L1.00036 12.0082L0.999641 10.0082Z"
+                  fill="#F4F2ED"
+                ></path>
+              </svg>
+            </span>
+
+            <div class="paginLine">
+              <span class="pagin active ac-red">1</span>
+              <a href="#" class="pagin">2</a>
+              <a href="#" class="pagin">3</a>
+              <a href="#" class="pagin">4</a>
+              <a href="#" class="pagin">5</a>
+              <span class="pagin ac-red">...</span>
+              <a href="#" class="pagin">248</a>
+            </div>
+
+            <a class="paginationPrevNext act" href="#">
+              <svg
+                width="24"
+                height="22"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 11.0082L23.7068 11.7156C23.8944 11.5282 23.9999 11.2739 24 11.0087C24.0001 10.7434 23.8949 10.489 23.7074 10.3014L23 11.0082ZM23.7074 10.3014L13.7074 0.293185L12.2926 1.70682L22.2926 11.7151L23.7074 10.3014ZM22.2932 10.3008L12.2932 20.2926L13.7068 21.7074L23.7068 11.7156L22.2932 10.3008ZM23.0004 10.0082L0.000358499 10L-0.000358499 12L22.9996 12.0082L23.0004 10.0082Z"
+                  fill="#F4F2ED"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="images/logo_1.png" alt="Логотип" />
+            <div class="footer__logo-text">
+              <p class="footer__logo-title">Областной поисковый центр</p>
+              <p class="footer__logo-subtitle">имени Артура Ольховского</p>
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__social-item">
+              <a href="#" target="_blank" class="social-link">
+                <svg
+                  width="15"
+                  height="9"
+                  viewBox="0 0 15 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.4469 5.1425C12.2044 4.83625 12.2737 4.7 12.4469 4.42625C12.45 4.42313 14.4519 1.65688 14.6581 0.71875L14.6594 0.718125C14.7619 0.37625 14.6594 0.125 14.1637 0.125H12.5237C12.1062 0.125 11.9137 0.340625 11.8106 0.581875C11.8106 0.581875 10.9756 2.58063 9.79437 3.87625C9.41312 4.25063 9.23687 4.37063 9.02874 4.37063C8.92624 4.37063 8.76687 4.25063 8.76687 3.90875V0.718125C8.76687 0.308125 8.64999 0.125 8.30437 0.125H5.72562C5.46374 0.125 5.30812 0.31625 5.30812 0.494375C5.30812 0.883125 5.89874 0.9725 5.95999 2.06625V4.43938C5.95999 4.95938 5.86562 5.055 5.65624 5.055C5.09874 5.055 3.74562 3.04813 2.94374 0.75125C2.78187 0.305625 2.62374 0.125625 2.20312 0.125625H0.562492C0.0943673 0.125625 -7.62939e-06 0.34125 -7.62939e-06 0.5825C-7.62939e-06 1.00875 0.557492 3.12813 2.59249 5.92813C3.94874 7.83938 5.85874 8.875 7.59624 8.875C8.64062 8.875 8.76812 8.645 8.76812 8.24938C8.76812 6.42313 8.67374 6.25063 9.19687 6.25063C9.43937 6.25063 9.85687 6.37063 10.8319 7.2925C11.9462 8.38563 12.1294 8.875 12.7531 8.875H14.3931C14.8606 8.875 15.0975 8.645 14.9612 8.19125C14.6494 7.23688 12.5419 5.27375 12.4469 5.1425Z"
+                    fill="#DC5A52"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a href="#" target="_blank" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  width="15px"
+                  height="15px"
+                >
+                  <path
+                    d="M 9 4 C 6.24 4 4 6.24 4 9 L 4 41 C 4 43.76 6.24 46 9 46 L 41 46 C 43.76 46 46 43.76 46 41 L 46 9 C 46 6.24 43.76 4 41 4 L 9 4 z M 25 9 C 29.42 9 33 12.58 33 17 C 33 21.42 29.42 25 25 25 C 20.58 25 17 21.42 17 17 C 17 12.58 20.58 9 25 9 z M 25 13 A 4 4 0 0 0 21 17 A 4 4 0 0 0 25 21 A 4 4 0 0 0 29 17 A 4 4 0 0 0 25 13 z M 33 26.490234 C 33.63 26.490234 34.250625 26.789609 34.640625 27.349609 C 35.270625 28.249609 35.050625 29.500859 34.140625 30.130859 C 32.640625 31.180859 30.99 31.939922 29.25 32.419922 L 34.410156 37.589844 C 35.200156 38.369844 35.200156 39.630156 34.410156 40.410156 C 34.020156 40.800156 33.51 41 33 41 C 32.49 41 31.979844 40.800156 31.589844 40.410156 L 25 33.830078 L 18.410156 40.410156 C 18.020156 40.800156 17.51 41 17 41 C 16.49 41 15.979844 40.800156 15.589844 40.410156 C 14.799844 39.630156 14.799844 38.369844 15.589844 37.589844 L 20.75 32.419922 C 19.02 31.939922 17.369141 31.190625 15.869141 30.140625 C 14.969141 29.510625 14.739141 28.269375 15.369141 27.359375 C 15.759141 26.799375 16.379531 26.5 17.019531 26.5 C 17.409531 26.5 17.810156 26.619375 18.160156 26.859375 C 20.170156 28.259375 22.54 29 25 29 C 27.47 29 29.839375 28.259609 31.859375 26.849609 C 32.199375 26.609609 32.6 26.490234 33 26.490234 z"
+                    fill="#DC5A52"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__social-item">
+              <a href="3" target="_blank" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  width="20px"
+                  height="20px"
+                >
+                  <path
+                    d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"
+                    fill="#DC5A52"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Средняя строка -->
+        <div class="footer__middle">
+          <div class="footer__contact">
+            <p class="footer__contact-title">Телефон</p>
+            <p class="footer__contact-text">
+              <a href="tel:+73452688576">+7 (3452) 68-85-76 (доб. 88)</a>
+            </p>
+          </div>
+          <div class="footer__contact">
+            <p class="footer__contact-title">Почта</p>
+            <p class="footer__contact-text">
+              <a href="mailto:poiskoviki72@yandex.ru">poiskoviki72@yandex.ru</a>
+            </p>
+          </div>
+          <div class="footer__contact">
+            <p class="footer__contact-title">Адрес</p>
+            <p class="footer__contact-text">
+              <a target="_blank" href="#"
+                >Тюмень, пр. Геологоразведчиков, д. 6А, каб. 205</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__bottom-item">
+            © 2024 Стена памяти. Все права защищены.
+          </p>
+          <p class="footer__bottom-item">
+            <a target="_blank" href="#">Политика конфиденциальности</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

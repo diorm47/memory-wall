@@ -1,0 +1,391 @@
+
+
+/* Start:/local/templates/ECHO-COMPANY/components/bitrix/breadcrumb/bread/style.css?1715795482730*/
+.bx-breadcrumb {
+	margin: 10px 0;
+}
+.bx-breadcrumb i {
+	color: #b5bdc2;
+	line-height: 13px;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.bx-breadcrumb .bx-breadcrumb-item {
+	float: left;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	line-height: 13px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.bx-breadcrumb .bx-breadcrumb-item span {
+	font-size: 8px;
+	line-height: 11px;
+	color: #4B4343;
+}
+
+@media (min-width: 375px) {
+	.bx-breadcrumb .bx-breadcrumb-item span {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 420px) {
+	.bx-breadcrumb .bx-breadcrumb-item span {
+		font-size: 12px;
+	}
+}
+
+.bx-breadcrumb .bx-breadcrumb-item a {border-bottom: 1px solid #000000;}
+.bx-breadcrumb .bx-breadcrumb-item a:hover {}
+
+/* End */
+
+
+/* Start:/local/templates/ECHO-COMPANY/components/bitrix/news.detail/detailphoto/style.css?17455997035082*/
+.detail-pers-list {
+	background-color: #FDFCFA!important;
+	padding-top: 0px !important;
+}
+
+.detail-pers-list__img {
+		min-width: 120px;
+		height: 140px;
+		margin-top: -54px;
+		margin-right: 20px;
+	}
+
+.detail-pers-list__container {
+	padding-top: 30px !important;
+}
+
+.detail-pers-list__date {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #4B4343;
+	/*margin-left: -140px;*/
+}
+.detail-pers-list__gal_img {
+	height: 150px;
+	object-fit: cover;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.detail-pers-list__name,
+.detail-pers-list__name2{
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.detail-pers-list__title {
+	font-family: 'B52';
+	font-size: 48px;
+	line-height: 60px;
+	color: #4B4343;
+	/*margin-top: 70px;*/
+	padding-bottom: 3px;
+	border-bottom: 1px solid #4B4343;
+}
+
+.detail-pers-list__medal {
+	display: inline-block;
+	width: 190px;
+	margin: 0 15px;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: #4B4343;
+}
+
+.detail-pers__tabs {
+	position: absolute;
+	right: 310px;
+	top: -60px;
+	background: #FBF6F2;
+	box-shadow: 2px -3px 5px rgba(0, 0, 0, 0.1);
+	width: 310px;
+	height: 60px;
+	border-radius: 30px/75px 30px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	line-height: 13px;
+	cursor: pointer;
+}
+
+.detail-pers__tabs:first-child {
+	right: 0;
+}
+.detail-pers__tabs:hover span {
+	border-bottom: none!important;
+}
+
+.detail-pers__nav {
+	width: 100%;
+	max-width: 410px;
+	height: 60px;
+	border: 2px solid #DC5A52;
+	box-sizing: border-box;
+	box-shadow: 0px 6px 10px rgba(80, 52, 41, 0.15);
+
+	font-size: 18px;
+	line-height: 17px;
+	color: #DC5A52;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 50px;
+}
+
+.detail-pers__nav:hover {
+	background-color: #FFFFFF55;
+}
+
+.detail-pers__tabs span {
+	display: none;
+}
+
+.b-medal-title {
+	height: 57px;
+	display: grid;
+	padding: 3px;
+}
+img.b-medal-image {
+	max-width: 125px;
+}
+
+@media(max-width: 320px) {
+	.detail-pers-list__img {
+		width: 160px;
+		height: auto;
+	}
+}
+
+@media (min-width: 375px) {
+	.detail-pers-list__name2 {
+		/*margin-bottom: 35px;*/
+		display: block;
+	}
+}
+
+@media(max-width: 375px) {
+
+	.detail-pers-list {
+		position: relative;
+	}
+	.detail-pers-list__date {
+		position: absolute;
+		left: 15px;
+		right: 15px;
+	}
+	.place-birth {
+		padding: 20px 0;
+	}
+
+	.detail-pers-list .mb-5 {
+		flex-direction: column;
+	}
+	.detail-pers-list__img {
+		width: 100px;
+		margin-bottom: 20px;
+	}
+	.detail-pers-list .mb-5 {
+		margin-bottom: 100px !important;
+	}
+}
+
+@media (max-width:380px) {
+	#detail-pers__alb .detail-pers-list__gal_img {
+		max-width: 250px;
+	}
+}
+
+@media (max-width: 520px) {
+	.detail-pers-list {
+		padding-left: 0px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.detail-pers__tabs {
+		padding-right: 10px;
+	}
+	.detail-pers-list__img {
+		min-width: 157px;
+		height: 194px;
+	}
+}
+
+@media (max-width: 768px) {
+	.detail-pers-list {
+		padding: 20px 0;
+	}
+	.detail-pers-list {
+		margin: 60px auto 0;
+	}
+	.detail-pers-list__title {
+		font-size: 33px;
+		/*line-height: 18px;*/
+	}
+	.arrow-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.detail-pers-list__img {
+		width: 221px;
+		height: 256px;
+		margin-top: -120px;
+		border: 10px solid #FDFCFA;
+		box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+		object-fit: cover;
+	}
+	.detail-pers-list__container {
+		padding-top: 38px!important;
+	}
+
+	.detail-pers-list__gal_img {
+		box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.detail-pers-list__name2 {
+		display: inline;
+	}
+
+	.detail-pers-list__date{
+		margin-left: 0px;
+	}
+
+	.detail-pers__tabs {
+		position: absolute;
+		right: 227px;
+		top: -60px;
+		background: #FBF6F2;
+		box-shadow: 2px -3px 5px rgba(0, 0, 0, 0.1);
+		width: 225px;
+		height: 60px;
+		border-radius: 30px/75px 30px 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+		line-height: 13px;
+		cursor: pointer;
+	}
+
+	.detail-pers__tabs svg {
+		width: 11px;
+		height: 12px;
+	}
+
+	.detail-pers__tabs span {
+		display: block;
+		font-size: 12px;
+	}
+
+	.detail-pers__nav {
+		width: 310px;
+	}
+
+	.arrow {
+		padding: 0px!important;
+	}
+
+}
+
+@media (max-width: 992px) {
+	.detail-pers__tabs {
+		width: 50px;
+		top: -40px;
+		height: 40px;
+		right: 50px;
+	}
+	.detail-pers__tabs span {
+		display: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.detail-pers-list__img {
+		width: 310px;
+		height: 360px;
+		margin-top: -160px;
+	}
+	.detail-pers-list__container {
+		padding-top: 93px !important;
+	}
+
+	.detail-pers-list__name {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 54px;;
+		color: #4B4343;
+	}
+
+	.detail-pers-list__name2 {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 54px;
+		color: #4B4343;
+	}
+
+	.detail-pers-list__date {
+		font-size: 16px;
+	}
+
+	.detail-pers__tabs {
+		right: 310px;
+		width: 310px;
+		height: 65px;
+	}
+
+	.detail-pers__tabs span {
+		font-size: 14px;
+	}
+
+	.detail-pers__tabs svg {
+		width: 14px;
+		height: 16px;
+	}
+
+	.detail-pers__nav {
+		width: 410px;
+		border-radius: 20px;
+	}
+}
+
+@media (max-width: 1365px) {
+
+	.detail-pers-list {
+		padding: 70px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */
+/* /local/templates/ECHO-COMPANY/components/bitrix/breadcrumb/bread/style.css?1715795482730 */
+/* /local/templates/ECHO-COMPANY/components/bitrix/news.detail/detailphoto/style.css?17455997035082 */

@@ -1,0 +1,293 @@
+
+
+/* Start:/local/templates/ECHO-COMPANY/components/bitrix/breadcrumb/bread/style.css?1715795482730*/
+.bx-breadcrumb {
+	margin: 10px 0;
+}
+.bx-breadcrumb i {
+	color: #b5bdc2;
+	line-height: 13px;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.bx-breadcrumb .bx-breadcrumb-item {
+	float: left;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	line-height: 13px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.bx-breadcrumb .bx-breadcrumb-item span {
+	font-size: 8px;
+	line-height: 11px;
+	color: #4B4343;
+}
+
+@media (min-width: 375px) {
+	.bx-breadcrumb .bx-breadcrumb-item span {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 420px) {
+	.bx-breadcrumb .bx-breadcrumb-item span {
+		font-size: 12px;
+	}
+}
+
+.bx-breadcrumb .bx-breadcrumb-item a {border-bottom: 1px solid #000000;}
+.bx-breadcrumb .bx-breadcrumb-item a:hover {}
+
+/* End */
+
+
+/* Start:/local/templates/ECHO-COMPANY/components/bitrix/system.pagenavigation/keengo_pagenavigation3/style.css?17157954821233*/
+.pagination {
+    justify-content: center;
+}
+
+.pagin {
+    height: 50px;
+    width: 30px;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 23px;
+    color: #4B4343;
+
+    margin: 0 10px;
+}
+.pagin:hover {
+    color: #DC5A52;
+}
+.pagin.active {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 23px;
+    color: #DC5A52;
+}
+.pagin.active.ac-red {
+    border-bottom: 3px solid #DC5A52;
+}
+.pagin:first-child {
+    margin-left: 0;
+}
+.pagin:last-child {
+    margin-right: 0;
+}
+
+.paginationPrevNext {
+    width: 50px;
+    height: 50px;
+    background: #DC5A52;
+    opacity: 0.6;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginationPrevNext.act {
+    opacity: 0.8;
+}
+.paginationPrevNext.act:hover {
+    opacity: 1;
+}
+
+.paginLine {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+@media (max-width:375px) {
+	.paginLine {
+	 	margin: 0 20px;
+	}
+}
+
+@media (max-width:490px) {
+	.pagin {
+		margin: 0px 0px;
+		font-size: 15px;
+	}
+}
+@media (max-width:405px) {
+	.pagin {
+		margin: 0px 0px;
+		font-size: 12px;
+		height: 50px;
+		width: 23px;
+	}
+}
+/* End */
+
+
+/* Start:/local/templates/ECHO-COMPANY/components/bitrix/news.list/memory/style.css?17455997032209*/
+div.news-list
+{
+	word-wrap: break-word;
+
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+.mem-item-href {
+	margin-bottom: 30px;
+	display: flex;
+    flex-wrap: wrap;
+}
+.mem-item {
+	border-radius: 10px;
+	width: 165px;
+	min-height: 300px;
+	background: #FFFFFF;
+	box-shadow: 0px 6px 10px rgba(80, 52, 41, 0.15);
+	transition-duration: .2s;
+	margin-bottom: 13px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mem-item__wrapper {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mem-item__tex-wrapper {
+	margin-bottom: 13px;
+	padding-left: 13px;
+}
+
+
+.p-2 {
+	display:flex!important;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.mem-item .d-inline-block {
+	display:flex!important;
+}
+
+.mem-item__fname {
+	margin-top: auto;
+}
+
+.wrapper {
+	margin-top: auto;
+}
+
+
+
+.mem-item:hover {
+	transform: scale(1.05);
+}
+
+.mem-item__img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	margin-bottom: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.mem-item__fname {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	color: #4B4343;
+	margin-bottom: -2px;
+	transition-duration: .2s;
+}
+.mem-item__name {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #4B4343;
+	transition-duration: .2s;
+}
+.mem-item__date {
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 19px;
+	color: #4B4343;
+	transition-duration: .2s;
+}
+.mem-item:hover .mem-item__fname,
+.mem-item:hover .mem-item__name,
+.mem-item:hover .mem-item__date {
+	color: #DC5A52;
+}
+
+@media (min-width: 1365px) {
+	.mem-item {
+		width: 200px;
+		min-height: 320px;
+	}
+}
+
+@media (min-width: 375px) {
+	.mem-item {
+		margin-bottom: -15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.mem-item {
+		width: 210px;
+		min-height: 350px;
+		margin-bottom: 0px;
+	}
+	.mem-item__img {
+		width: 210px;
+		height: 220px;
+		object-fit: cover;
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 1260px) {
+	.mem-item {
+		width: 200px;
+		min-height: 320px;
+	}
+	.mem-item__img {
+		width: 200px;
+	}
+}
+
+.container {
+    padding: 0 15px;
+}
+
+
+@media (min-width:1300px) {
+    .container {
+        padding: 0;
+    }
+
+}
+
+.gallary-container {
+	display: flex;
+	gap: 10px;
+}
+
+/* End */
+/* /local/templates/ECHO-COMPANY/components/bitrix/breadcrumb/bread/style.css?1715795482730 */
+/* /local/templates/ECHO-COMPANY/components/bitrix/system.pagenavigation/keengo_pagenavigation3/style.css?17157954821233 */
+/* /local/templates/ECHO-COMPANY/components/bitrix/news.list/memory/style.css?17455997032209 */
