@@ -1659,7 +1659,14 @@ a, a:hover {
 .link-logo.hide_for_search {
     display: none;
 }
-
+.link-logo div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.link-logo p {
+    margin: 0;
+}
 
 .mt-100 {
     margin-top: 100px;
@@ -2142,7 +2149,7 @@ ul.thumb-Images li {
     width: 100%;
 }
 .main-search__input {
-    width: 100%;
+    width: 75%;
     height: 70px;
     border: none;
     outline: none;
@@ -2155,7 +2162,7 @@ ul.thumb-Images li {
 }
 .main-search__button {
     background: linear-gradient(139.17deg, #FE7866 -20.63%, #BF0330 128.14%);
-    width: 300px;
+    width: 25% !important;
     height: 70px;
     font-size: 14px;
     line-height: 17px;
@@ -2176,7 +2183,7 @@ ul.thumb-Images li {
 .main-search-option {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .main-search-option input[type="checkbox"],
 .add-check input[type="checkbox"] {

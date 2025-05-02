@@ -23,7 +23,6 @@
       data-template-style="true"
       rel="stylesheet"
     />
-    <script src="js/core.js"></script>
   </head>
   <body>
     <div class="memory">
@@ -36,195 +35,17 @@
                   class="logo d-flex justify-content-between align-items-center"
                 >
                   <img src="images/logo.jpg" alt="" />
-          
+                  <p>
+                    Старобжегокайское сельское <br />
+                    поселение
+                  </p>
                 </div>
               </a>
-
-              <div
-                class="menu-pads position-relative d-flex align-items-center"
-              >
-                <div class="mmmenu">
-                  <aside class="d-inline-block position-relative menu-item">
-                    <a href="#" class="href-menu">О нас</a>
-
-                    <div class="menu-drop">
-                      <a href="#" class="menu-drop__item">Направления работы</a>
-
-                      <a href="#" class="menu-drop__item"
-                        >История поискового продвижения</a
-                      >
-
-                      <a href="#" class="menu-drop__item">Поисковые отряды</a>
-
-                      <a href="#" class="menu-drop__item">Новости</a>
-
-                      <a href="#" class="menu-drop__item">Контакты</a>
-                    </div>
-                  </aside>
-
-                  <a href="#" class="href-menu selected">Стена памяти</a>
-
-                  <aside class="d-inline-block position-relative menu-item">
-                    <a href="#" class="href-menu">узнать судьбу солдата</a>
-
-                    <div class="menu-drop">
-                      <a href="#" class="menu-drop__item"
-                        >Алгоритм поиска информации</a
-                      >
-
-                      <a href="#" class="menu-drop__item"
-                        >Оставить заявку на уточнение судьбы</a
-                      >
-
-                      <a href="#" class="menu-drop__item">Ресурсы для поиска</a>
-                    </div>
-                  </aside>
-
-                  <a href="#" class="href-menu">материалы</a>
-                </div>
-
-                <div id="title-search">
-                  <form action="/search/index.php" class="search">
-                    <input
-                      id="title-search-input"
-                      class="search-input"
-                      placeholder="Поиск по сайту..."
-                      type="text"
-                      name="q"
-                      value=""
-                      size="40"
-                      maxlength="50"
-                      autocomplete="off"
-                    />
-
-                    <svg
-                      width="24"
-                      height="24"
-                      id="search-svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16.6667 14.6667H15.6133L15.24 14.3067C16.5467 12.7867 17.3333 10.8133 17.3333 8.66667C17.3333 3.88 13.4533 0 8.66667 0C3.88 0 0 3.88 0 8.66667C0 13.4533 3.88 17.3333 8.66667 17.3333C10.8133 17.3333 12.7867 16.5467 14.3067 15.24L14.6667 15.6133V16.6667L21.3333 23.32L23.32 21.3333L16.6667 14.6667ZM8.66667 14.6667C5.34667 14.6667 2.66667 11.9867 2.66667 8.66667C2.66667 5.34667 5.34667 2.66667 8.66667 2.66667C11.9867 2.66667 14.6667 5.34667 14.6667 8.66667C14.6667 11.9867 11.9867 14.6667 8.66667 14.6667Z"
-                        fill="#4B4343"
-                      ></path>
-                    </svg>
-                  </form>
-                </div>
-                <script>
-                  $("#search-svg").on("click", function () {
-                    setTimeout(function () {
-                      if ($("input#title-search-input").hasClass("active")) {
-                        $(".mmmenu").css("visibility", "hidden");
-                      } else {
-                        $(".mmmenu").css("visibility", "visible");
-                      }
-                      $("input#title-search-input").focus();
-                    }, 200);
-                  });
-                  BX.ready(function () {
-                    new JCTitleSearch({
-                      AJAX_PAGE: "/photoarchive/",
-                      CONTAINER_ID: "title-search",
-                      INPUT_ID: "title-search-input",
-                      MIN_QUERY_LEN: 2,
-                    });
-                  });
-                </script>
-
-                <button class="navigation__toggle" type="button"></button>
-              </div>
             </div>
           </div>
-
-          <ul id="mobile_menu">
-            <li class="menu_item menu_item_parent">
-              <p class="menu_item_link">
-                О нас
-                <span class="menu_item_arrow"></span>
-              </p>
-
-              <ul class="submenu">
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link">Направления работы</a>
-                </li>
-
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link"
-                    >История поискового продвижения</a
-                  >
-                </li>
-
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link">Поисковые отряды</a>
-                </li>
-
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link">Новости</a>
-                </li>
-
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link">Контакты</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="menu_item">
-              <a href="3" class="menu_item_link">Стена памяти</a>
-            </li>
-
-            <li class="menu_item menu_item_parent">
-              <p class="menu_item_link">
-                узнать судьбу солдата
-                <span class="menu_item_arrow"></span>
-              </p>
-
-              <ul class="submenu">
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link"
-                    >Алгоритм поиска информации</a
-                  >
-                </li>
-
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link"
-                    >Оставить заявку на уточнение судьбы</a
-                  >
-                </li>
-
-                <li class="menu_item">
-                  <a href="#" class="menu_item_link">Ресурсы для поиска</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="menu_item">
-              <a href="#" class="menu_item_link">материалы</a>
-            </li>
-          </ul>
         </div>
       </header>
       <div class="container">
-        <div
-          class="bx-breadcrumb"
-          itemprop="http://schema.org/breadcrumb"
-          itemscope=""
-          itemtype="http://schema.org/BreadcrumbList"
-        >
-          <div
-            class="bx-breadcrumb-item"
-            id="bx_breadcrumb_0"
-            itemprop="itemListElement"
-            itemscope=""
-            itemtype="http://schema.org/ListItem"
-          >
-            <span itemprop="name">Старобжегокайское сельское поселение</span>
-            <meta itemprop="position" content="1" />
-          </div>
-
-          <div style="clear: both"></div>
-        </div>
         <div class="container main-page position-relative">
           <div class="main-img">
             <picture>
@@ -284,15 +105,11 @@
               участников Великой Отечественной войны и тружеников тыла.<br />
               Вы можете добавить информацию о вашем родственнике в архив
             </p>
-            <a href="/add-person/" class="add-people">Добавить ветерана</a>
+            <a href="#" class="add-people">Добавить ветерана</a>
           </div>
         </div>
         <p class="memory-search__title">Поиск человека</p>
-        <script>
-          $("body").on("input", "#input-words", function () {
-            this.value = this.value.replace(/[^a-zа-яё\s]/gi, "");
-          });
-        </script>
+
         <form method="GET" action="">
           <div class="main-search">
             <div class="main-search__wrapper">
@@ -301,77 +118,22 @@
                 type="text"
                 name="find_fname"
                 class="main-search__input"
-                placeholder="Фамилия"
+                placeholder=""
               />
-              <input
-                id="input-words"
-                type="text"
-                name="find_name"
-                class="main-search__input"
-                placeholder="Имя"
-              />
-              <input
-                id="input-words"
-                type="text"
-                name="find_mname"
-                class="main-search__input"
-                placeholder="Отчество"
-              />
-              <input
-                type="number"
-                name="find_birth_year"
-                class="main-search__input"
-                placeholder="Год рождения"
-              />
+
               <button class="main-search__button main-search__button--on-bz">
                 Найти ветерана
               </button>
             </div>
-            <div style="width: 100%" class="main-search-option-3">
-              <input
-                id="input-words"
-                type="text"
-                name="find_placebirth"
-                class="main-search__input"
-                placeholder="Место рождения"
-              />
-              <div class="main-search-option3__wrapper">
-                <div class="main-search-option3__sub-wrapper1">
-                  <input
-                    id="input-words"
-                    type="text"
-                    name="find_placecall"
-                    class="main-search__input"
-                    placeholder="Место призыва"
-                  />
-                </div>
-                <div class="main-search-option3__sub-wrapper2">
-                  <input
-                    id="input-words"
-                    type="text"
-                    name="find_rank"
-                    class="main-search__input"
-                    placeholder="Звание, должность"
-                  />
-                  <input
-                    type="date"
-                    name="find_datecall"
-                    class="main-search__input"
-                    placeholder="Дата призыва"
-                  />
-                </div>
-              </div>
-            </div>
+
             <button class="main-search__button">Найти ветерана</button>
           </div>
           <div class="main-search-option">
-            <div class="i-select-search-form"></div>
-            <a href="#" class="main-search-option__more"
-              >а. Старобжегокай, п. Новая Адыгея, х. Хомуты</a
-            >
+            <a href="#" class="main-search-option__more">а. Старобжегокай,</a>
+            <a href="#" class="main-search-option__more">п. Новая Адыгея, </a>
+            <a href="#" class="main-search-option__more"> х. Хомуты</a>
           </div>
         </form>
-        <script src="js/jquery.min.js"></script>
 
         <div class="alf d-flex justify-content-between">
           <div class="alf__wrapper">
@@ -735,9 +497,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
