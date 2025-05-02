@@ -1655,6 +1655,7 @@ a, a:hover {
 .link-logo {
     flex-shrink: 0;
     display: block;
+    margin-top: 20px;
 }
 .link-logo.hide_for_search {
     display: none;
@@ -1998,7 +1999,7 @@ a, a:hover {
     color: #DC5A52;
 }
 .logo img {
-    width: 60px;
+    width: 80px;
     border-radius: 50%;
 }
 .add-dash {
