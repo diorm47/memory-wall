@@ -1687,7 +1687,7 @@ a, a:hover {
 }
 .logo-down {
     font-size: 14px;
-    line-height: 13px;
+    line-height: 100%;
     color: #DC5A52;
     margin-bottom: 0;
     margin-top: 4px;
@@ -3445,7 +3445,15 @@ iframe[src^="https://www.youtube.com"] {
         margin-bottom: 20px;
     }
     .main-search__button {
-        width: 100%;
+        width: 100% !important;
+    }
+    .main-search-option {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .memory-search__title {
+        display: none;
     }
     .alf {
         display: block!important;
@@ -5134,7 +5142,7 @@ footer a {
 }
 .logo-down {
 	font-size: 7px;
-	line-height: 13px;
+	line-height: 100%;
 }
 
 
@@ -5145,7 +5153,7 @@ footer a {
 	}
 	.logo-down {
 		font-size: 12px;
-		line-height: 12px;
+		line-height: 100%;
 	}
 }
 
@@ -5157,7 +5165,7 @@ footer a {
 	}
 	.logo-down {
 		font-size: 16px;
-		line-height: 13px;
+		line-height: 100%;
 	}
 }
 
